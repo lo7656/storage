@@ -12,7 +12,7 @@ function maker(json){
     //         json = json.Травы
     //         break
     // }
-    console.log(json)
+    console.log(location.pathname)
     json.forEach(element => {
         let card = `<a class="localpagelist2__block" href="#"><span class="localpic localpagelist2__block-pic localpic--small"><img src="${element.image}" alt="" title="" /></span><span class="localpagelist2__block-text">${element.name}</span></a>`
         document.querySelector('.localpagelist2').innerHTML += card;
