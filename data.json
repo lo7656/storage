@@ -1,5 +1,5 @@
 {
-    "Овощи" : [{"name": "Авокадо: стандарт, Hass", "image" : "https://i.imgur.com/mRBmdjc.png"},{"name": "Авокадо", "image" : "https://i.imgur.com/mRBmdjc.png"},{"name" : "Баклажан", "image" : "https://i.imgur.com/fPifAh2.png"}],
+    "Овощи" : [{"name": "Авокадо: стандарт, Hass", "image" : "https://i.imgur.com/mRBmdjc.png"},{"name" : "Баклажан", "image" : "https://i.imgur.com/fPifAh2.png"}],
     "Фрукты" : [{"name": "Ананас: Стандарт, Пхукет, Мини", "image" : "https://i.imgur.com/quKwz85.png"},{"name": "Апельсин: Турция, Испания", "image" : "https://i.imgur.com/53TTzGB.png"},{"name": "Банан", "image" : "https://i.imgur.com/TFsKxPv.png"},{"name": "", "image" : ""},{"name": "", "image" : ""}],
     "Ягоды" : [{"name": "Арбуз", "image" : "https://i.imgur.com/2QQQ0Fq.png"}],
     "Травы" :[{"name": "Базилик", "image" : "https://i.imgur.com/UCT5yUu.png"}]
