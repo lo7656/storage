@@ -9,5 +9,5 @@ function maker(json){
 
 fetch('https://raw.githubusercontent.com/lo7656/storage/master/data.json', { method: 'GET' })
     .then(response => response.json())
-    .then(body => maker(body.Овощи))
+    .then(body => maker(body.location.pathname))
     .catch(error => console.log(error))
