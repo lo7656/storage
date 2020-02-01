@@ -12,7 +12,7 @@ function maker(json){
             json = json.Травы
             break;
         
-        case "/exFruit":
+        case "/exfruit":
             json = json.Экзофрукты
             break;
     }
