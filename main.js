@@ -49,7 +49,7 @@ function maker(json) {
             break;
         
         case "/boiledvegetables":
-            json = json.ВакуумированныеОвощи
+            json = json.ОтварныеОвощи
             break;
     }
     console.log(json)
