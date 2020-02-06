@@ -27,6 +27,10 @@ function maker(json){
         case "/mushrooms":
             json = json.Грибы
             break;
+        
+        case "/salads":
+            json = json.Салаты
+            break;
     }
     console.log(json)
     json.forEach(element => {
