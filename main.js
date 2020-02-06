@@ -1,9 +1,9 @@
-function maker(json){
-    switch(location.pathname){
+function maker(json) {
+    switch (location.pathname) {
         case "/fruit":
             json = json.Фрукты
             break;
-        
+
         case "/vegetables":
             json = json.Овощи
             break;
@@ -11,7 +11,7 @@ function maker(json){
         case "/herbs":
             json = json.Травы
             break;
-        
+
         case "/exfruit":
             json = json.Экзофрукты
             break;
@@ -19,7 +19,7 @@ function maker(json){
         case "/exvegetables":
             json = json.Экзоовощи
             break;
-        
+
         case "/berries":
             json = json.Ягоды
             break;
@@ -27,13 +27,29 @@ function maker(json){
         case "/mushrooms":
             json = json.Грибы
             break;
-        
+
         case "/salads":
             json = json.Салаты
             break;
 
         case "/pickles":
             json = json.Соления
+            break;
+
+        case "/nuts":
+            json = json.Арехи
+            break;
+
+        case "/driedfruits":
+            json = json.Сухофрукты
+            break;
+
+        case "/evacuated":
+            json = json.ВакуумированныеОвощи
+            break;
+        
+        case "/boiledvegetables":
+            json = json.ВакуумированныеОвощи
             break;
     }
     console.log(json)
