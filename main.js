@@ -55,6 +55,10 @@ function maker(json) {
         case "/meat":
             json = json.Мясо
             break;
+
+        case "/sausages":
+            json = json.Мясо
+            break;
     }
     console.log(json)
     json.forEach(element => {
