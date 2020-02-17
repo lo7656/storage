@@ -57,7 +57,7 @@ function maker(json) {
             break;
 
         case "/sausages":
-            json = json.Мясо
+            json = json.Мясныеизделия
             break;
     }
     console.log(json)
