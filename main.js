@@ -64,7 +64,7 @@ function maker(json) {
             json = json.Джемы
             break;
 
-        case "/souces":
+        case "/sauces":
             json = json.Соусы
             break;
 
