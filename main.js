@@ -64,6 +64,10 @@ function maker(json) {
             json = json.Джемы
             break;
 
+        case "/souces":
+            json = json.Джемы
+            break;
+
     }
     console.log(json)
     json.forEach(element => {
