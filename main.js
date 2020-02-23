@@ -68,6 +68,13 @@ function maker(json) {
             json = json.Соусы
             break;
 
+        case "/conservation":
+            json = json.Консервация
+            break;
+
+        case "/east":
+            json = json.Восток
+            break;
     }
     console.log(json)
     json.forEach(element => {
