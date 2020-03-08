@@ -79,6 +79,14 @@ function maker(json) {
         case "/grocery":
             json = json.Бакалея
             break;
+
+        case "/spice":
+            json = json.Специи
+            break;
+
+        case "/tea":
+            json = json.Чай
+            break;
     }
     console.log(json)
     json.forEach(element => {
