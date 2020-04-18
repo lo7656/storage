@@ -1,9 +1,9 @@
-let ls = []
 let data  
 
 function add(card) {
     let value = getItems(card.id) 
-     ls.push(value)
+
+    localStorage.setItem(value)
 }
 
 function getItems(id){
