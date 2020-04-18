@@ -1,3 +1,11 @@
+$( document ).ready(function() {
+    $('.trigger').on('click', function() {
+       $('.modal-wrapper').toggleClass('open');
+      $('.page-wrapper').toggleClass('blur-it');
+       return false;
+    });
+  });
+  
 let data
 if (localStorage.key == undefined)
     localStorage.setItem('key', 0)
@@ -8,7 +16,7 @@ function add(card) {
 }
 
 function counter(value){
-    localStorage.setItem(localStorage.getItem('key'), ...value)
+    localStorage.setItem(localStorage.getItem('key'), value)
     localStorage.setItem('key', Number(localStorage.getItem('key'))+1)
 }
 
