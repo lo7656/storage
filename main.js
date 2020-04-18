@@ -5,7 +5,7 @@ if (localStorage.key == undefined)
 function add(card) {
     let value = getItems(card.id)
     localStorage.setItem(localStorage.key, value)
-    localStorage.setItem('key', localStorage.getItem('key')+1)
+    localStorage.setItem('key', localStorage.getItem('key')++)
 }
 
 function getItems(id) {
