@@ -1,4 +1,5 @@
 let ls = []
+let data  
 
 function add(card) {
     let value = getItems(card.id) 
@@ -6,7 +7,7 @@ function add(card) {
 }
 
 function getItems(id){
-    return  json[id]
+    return  data[id]
 }
 
 function maker(json) {
@@ -104,7 +105,7 @@ function maker(json) {
             json = json.Сладости
             break;
     }
-    console.log(json)
+    data = json
     let id = 0
 
     json.forEach(element => {
