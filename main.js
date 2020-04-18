@@ -1,13 +1,15 @@
-let data  
+let data
+if (localStorage.key == undefined)
+    localStorage.setItem("key", 0)
 
 function add(card) {
-    let value = getItems(card.id) 
-
-    localStorage.setItem(value)
+    let value = getItems(card.id)
+    localStorage.setItem(localStorage.key, value)
+    localStorage.key++
 }
 
-function getItems(id){
-    return  data[id]
+function getItems(id) {
+    return data[id]
 }
 
 function maker(json) {
@@ -16,7 +18,7 @@ function maker(json) {
             json = json.Фрукты
             break;
 
-            
+
         case "/vegetables":
             json = json.Овощи
             break;
