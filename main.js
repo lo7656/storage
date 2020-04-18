@@ -8,7 +8,7 @@ function add(card) {
 }
 
 function counter(value){
-    localStorage.setItem(localStorage.key, value)
+    localStorage.setItem(localStorage.getItem('key'), value)
     localStorage.setItem('key', Number(localStorage.getItem('key'))+1)
 }
 
