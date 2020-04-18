@@ -108,7 +108,7 @@ function maker(json) {
     let id = 0
 
     json.forEach(element => {
-        let card = `<a id="${id}" class="localpagelist2__block" href="#"><span class="localpic localpagelist2__block-pic localpic--small"><img src="${element.image}" alt="" title="" /></span><span class="localpagelist2__block-text">${element.name}</span></a>`
+        let card = `<a id="${id}" class="localpagelist2__block"><span class="localpic localpagelist2__block-pic localpic--small"><img src="${element.image}" alt="" title="" /></span><span class="localpagelist2__block-text">${element.name}</span></a>`
         document.querySelector('.localpagelist2').innerHTML += card;
         id++
     });
