@@ -4,10 +4,10 @@ if (localStorage.key == undefined)
 
 function add(card) {
     let value = getItems(card.id)
-    counter()
+    counter(value)
 }
 
-function counter(){
+function counter(value){
     localStorage.setItem(localStorage.key, value)
     localStorage.setItem('key', Number(localStorage.getItem('key'))+1)
 }
