@@ -1,10 +1,8 @@
 let ls = []
-let card1  
 
 function add(card) {
-    console.log(card)
-    card1 = card
-     ls.push = { name: name, link: link }
+    let value = getItems(card.id) 
+     ls.push = {value}
 }
 
 function getItems(id){
