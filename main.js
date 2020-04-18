@@ -1,7 +1,9 @@
-let LS = []
+let ls = []
+let card1  
 
 function add(card) {
     console.log(card)
+    card1 = card
      ls.push = { name: name, link: link }
 }
 
