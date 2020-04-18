@@ -3,7 +3,7 @@ let data
 
 function add(card) {
     let value = getItems(card.id) 
-     ls.push = {value}
+     ls.push(value)
 }
 
 function getItems(id){
