@@ -1,9 +1,21 @@
+let LS = []
+
+function add(card) {
+    console.log(card)
+     ls.push = { name: name, link: link }
+}
+
+function getItems(id){
+    return  json[id]
+}
+
 function maker(json) {
     switch (location.pathname) {
         case "/fruit":
             json = json.Фрукты
             break;
 
+            
         case "/vegetables":
             json = json.Овощи
             break;
@@ -47,7 +59,7 @@ function maker(json) {
         case "/evacuated":
             json = json.ВакуумированныеОвощи
             break;
-        
+
         case "/boiledvegetables":
             json = json.ОтварныеОвощи
             break;
@@ -59,7 +71,7 @@ function maker(json) {
         case "/sausages":
             json = json.Мясныеизделия
             break;
-        
+
         case "/jams":
             json = json.Джемы
             break;
@@ -93,10 +105,13 @@ function maker(json) {
             break;
     }
     console.log(json)
+    let id = 0
+
     json.forEach(element => {
-        let card = `<a class="localpagelist2__block" href="#"><span class="localpic localpagelist2__block-pic localpic--small"><img src="${element.image}" alt="" title="" /></span><span class="localpagelist2__block-text">${element.name}</span></a>`
+        let card = `<a id="${id}" class="localpagelist2__block" href="#"><span class="localpic localpagelist2__block-pic localpic--small"><img src="${element.image}" alt="" title="" /></span><span class="localpagelist2__block-text">${element.name}</span></a>`
         document.querySelector('.localpagelist2').innerHTML += card;
         console.log(card)
+        id++
     });
 }
 
