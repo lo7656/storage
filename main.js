@@ -19,6 +19,15 @@ function deleteCard(card) {
     localStorage.removeItem(`image${idCard}`)
     localStorage.removeItem(`name${idCard}`)
 
+    for (let i = 1; i < localStorage.getItem('key'); index++) {
+        if(i != idCard || i > idCard){
+            localStorage.setItem(`name${i-1}`,localStorage.getItem(`name${i}`))
+        }
+        
+    }
+    localStorage.setItem('key', Number(localStorage.getItem('key'))-1)
+
+
     listAdd()
 }
 
