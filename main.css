@@ -264,7 +264,8 @@ opacity: 0;
   align-items: center;
 }
 
-.clientdata{
+
+.clientData{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
