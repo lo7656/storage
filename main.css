@@ -19,13 +19,13 @@
   justify-content: space-between;
 }
 
-.deleteBtn{
+.card .deleteBtn{
   cursor: pointer;
   transition: 0.3s;
   text-decoration: none;
 }
 
-.deleteBtn:hover{
+.card .deleteBtn:hover{
   transition: 0.3s;
   text-decoration: underline;
 }
