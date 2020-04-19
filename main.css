@@ -6,21 +6,26 @@
 }
 
 .card{
-  cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
-.deleteBtn{
-  translate: 0.3s;
-  text-decoration: underline;
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.deleteBtn :hover{
+.deleteBtn{
+  cursor: pointer;
   translate: 0.3s;
   text-decoration: none;
+}
+
+.deleteBtn:hover{
+  translate: 0.3s;
+  text-decoration: underline;
 }
 
 .content{
