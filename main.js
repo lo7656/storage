@@ -7,7 +7,7 @@ $( document ).ready(function() {
   });
   
 let data
-if (localStorage.key == undefined)
+if (localStorage.key == null)
     localStorage.setItem('key', 0)
 
 
@@ -21,10 +21,9 @@ function add(card) {
 function listAdd(){
     let count = localStorage.getItem('key')
     
-    for (let i = 0; i < count; i++) {
+    for (let i = 1; i < count; i++) {
         const elementImg = localStorage.getItem(`name${i}`)
         const elementName = localStorage.getItem(`image${i}`)
-        console.log(element)
         let card =`<div id="${i+1}card"><p id="nameCard">${elementName}</p> <img id="imgCard" src="${elementImg}"/></div>`
         document.querySelector('.localpagelist2').innerHTML += card;
     }
