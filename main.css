@@ -56,7 +56,7 @@ a.btn {
   position: fixed;
   top: 0; 
   left: 0;
-  background: rgba(156, 99, 24, 0.8);
+  background: rgba(31, 250, 23, 0.3);
   visibility: hidden;
   opacity: 0;
   transition: all 0.25s ease-in-out;
@@ -90,7 +90,7 @@ a.btn {
   height: 32px;
   padding: 12px 30px;
   overflow: hidden;
-  background: rgba(31, 250, 23, 0.3);;
+  background: #F95C18;
 }
 
 .btn-close {
