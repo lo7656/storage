@@ -21,12 +21,12 @@
 
 .deleteBtn{
   cursor: pointer;
-  translate: 0.3s;
+  transition: 0.3s;
   text-decoration: none;
 }
 
 .deleteBtn:hover{
-  translate: 0.3s;
+  transition: 0.3s;
   text-decoration: underline;
 }
 
@@ -290,11 +290,11 @@ opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  translate: 0.5s;
+  transition: 0.5s;
 }
 
 .client .sendBtn:hover{
-  translate: 0.5s;
+  transition: 0.5s;
   background-color: #fff;
   color: #F95C18;
 }
