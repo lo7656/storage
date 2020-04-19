@@ -1,16 +1,23 @@
-$( document ).ready(function() {
-    $('.trigger').on('click', function() {
-       $('.modal-wrapper').toggleClass('open');
-      $('.page-wrapper').toggleClass('blur-it');
-       return false;
+$(document).ready(function () {
+    $('.trigger').on('click', function () {
+        $('.modal-wrapper').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        return false;
     });
-  });
-  
+});
+
 let data
 if (localStorage.key == null)
     localStorage.setItem('key', 0)
 
+function deleteCard(card) {
+    let idCard = card.id
 
+    localStorage.removeItem(`image${idCard}`)
+    localStorage.removeItem(`name${idCard}`)
+
+    listAdd()
+}
 
 function add(card) {
     let value = getItems(card.id)
@@ -18,22 +25,22 @@ function add(card) {
     listAdd()
 }
 
-function listAdd(){
+function listAdd() {
     let count = localStorage.getItem('key')
     document.querySelector('.cards').innerHTML = ''
-    
+
     for (let i = 1; i < count; i++) {
         const elementImg = localStorage.getItem(`image${i}`)
         const elementName = localStorage.getItem(`name${i}`)
-        let card =`<div id="${i}" class="card" id="${i+1}card"><p class="nameCard">${elementName}</p> <img class="imgCard" src="${elementImg}"/> <a onClick="deleteCard(event.currentTarget)" class="deleteBtn">Удалить</a></div>`
+        let card = `<div id="${i}" class="card" id="${i + 1}card"><p class="nameCard">${elementName}</p> <img class="imgCard" src="${elementImg}"/> <a onClick="deleteCard(event.currentTarget)" class="deleteBtn">Удалить</a></div>`
         document.querySelector('.cards').innerHTML += card;
     }
 }
 
-function counter(value){
+function counter(value) {
     localStorage.setItem('name' + localStorage.getItem('key'), value.name)
     localStorage.setItem('image' + localStorage.getItem('key'), value.image)
-    localStorage.setItem('key', Number(localStorage.getItem('key'))+1)
+    localStorage.setItem('key', Number(localStorage.getItem('key')) + 1)
 }
 
 function getItems(id) {
