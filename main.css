@@ -277,6 +277,7 @@ opacity: 0;
   border: 0;
   border-bottom: 1px solid #F95C18;
   width: 100%;
+  margin-bottom: 3px;
 }
 
 .sendBtn{
