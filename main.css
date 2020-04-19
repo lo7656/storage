@@ -260,7 +260,7 @@ opacity: 0;
 
 .client{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -277,4 +277,18 @@ opacity: 0;
   border: 0;
   border-bottom: 1px solid #F95C18;
   width: 35%;
+}
+
+.sendBtn{
+  border: #F95C18;
+  background-color: #F95C18;
+  color: #fff;
+  text-decoration: none;
+  width: 45%;
+}
+
+.sendBtn:hover{
+  translate: 0.3s;
+  background-color: none;
+  color: #F95C18;
 }
