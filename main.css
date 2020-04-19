@@ -257,3 +257,23 @@ opacity: 0;
 }
 }
 /* конец кнопки звязи */
+
+.client{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientData{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.dataInp{
+  border: 0;
+  border-bottom: 1px solid #F95C18;
+}
