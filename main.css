@@ -20,6 +20,7 @@
 }
 
 .card .deleteBtn{
+  color: #F95C18;
   cursor: pointer;
   transition: 0.3s;
   text-decoration: none;
@@ -28,6 +29,7 @@
 .card .deleteBtn:hover{
   transition: 0.3s;
   text-decoration: underline;
+  color: red;
 }
 
 .content{
