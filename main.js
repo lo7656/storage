@@ -159,6 +159,7 @@ function maker(json) {
     data = json
     let id = 0
 
+    listAdd()
     json.forEach(element => {
         let card = `<a onclick="add(event.currentTarget)" style="cursor: pointer;"id="${id}" class="localpagelist2__block"><span class="localpic localpagelist2__block-pic localpic--small"><img src="${element.image}" alt="" title="" /></span><span class="localpagelist2__block-text">${element.name}</span></a>`
         document.querySelector('.localpagelist2').innerHTML += card;
