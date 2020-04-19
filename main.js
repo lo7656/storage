@@ -12,7 +12,7 @@ if (localStorage.key == null)
 
 function deleteCard(card) {
     let idCard = card.id
-
+    console.log(idCard)
     localStorage.removeItem(`image${idCard}`)
     localStorage.removeItem(`name${idCard}`)
 
