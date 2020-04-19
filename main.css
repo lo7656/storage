@@ -6,6 +6,7 @@
 }
 
 .card{
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -55,7 +56,7 @@ a.btn {
   position: fixed;
   top: 0; 
   left: 0;
-  background: #F95C18;
+  background: rgba(156, 99, 24, 0.8);
   visibility: hidden;
   opacity: 0;
   transition: all 0.25s ease-in-out;
@@ -89,7 +90,7 @@ a.btn {
   height: 32px;
   padding: 12px 30px;
   overflow: hidden;
-  background: #F95C18;
+  background: rgb(98%, 36%, 9%, 0.3);;
 }
 
 .btn-close {
