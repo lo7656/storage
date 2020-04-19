@@ -280,7 +280,7 @@ opacity: 0;
   margin-bottom: 3px;
 }
 
-.client .sendBtn{
+.client.sendBtn{
   cursor: pointer;
   border: #F95C18 1px solid;
   background-color: #F95C18;
@@ -290,11 +290,11 @@ opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  translate: 0.3s;
+  translate: 0.5s;
 }
 
-.client .sendBtn:hover{
-  translate: 0.3s;
+.client.sendBtn:hover{
+  translate: 0.5s;
   background-color: #fff;
   color: #F95C18;
 }
