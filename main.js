@@ -15,6 +15,7 @@ if (localStorage.key == undefined)
 function add(card) {
     let value = getItems(card.id)
     counter(value)
+    listAdd()
 }
 
 function listAdd(){
