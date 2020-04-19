@@ -22,15 +22,17 @@ function listAdd(){
     let count = localStorage.getItem('key')
     
     for (let i = 0; i < count; i++) {
-        const element = localStorage.getItem(`${i}`);
+        const elementImg = localStorage.getItem(`name${i}`)
+        const elementName = localStorage.getItem(`image${i}`)
         console.log(element)
-        let card =`<div id="${i+1}card"><p id="nameCard">${element.name}</p> <img id="imgCard" src="${element.image}"/></div>`
+        let card =`<div id="${i+1}card"><p id="nameCard">${elementName}</p> <img id="imgCard" src="${elementImg}"/></div>`
         document.querySelector('.localpagelist2').innerHTML += card;
     }
 }
 
 function counter(value){
-    localStorage.setItem(localStorage.getItem('key'), value)
+    localStorage.setItem('name' + localStorage.getItem('key'), value.name)
+    localStorage.setItem('image' + localStorage.getItem('key'), value.image)
     localStorage.setItem('key', Number(localStorage.getItem('key'))+1)
 }
 
