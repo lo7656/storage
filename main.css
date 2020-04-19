@@ -14,14 +14,13 @@
 }
 
 .deleteBtn{
-  color: #fff;
   translate: 0.3s;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .deleteBtn :hover{
   translate: 0.3s;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .content{
