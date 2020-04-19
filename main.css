@@ -12,6 +12,10 @@
   justify-content: space-between;
 }
 
+.cards{
+  height: 100%;
+}
+
 .info{
   width: 80%;
   display: flex;
@@ -34,7 +38,6 @@
 
 .content{
   background-color: #fff;
-  height: 100%;
 }
 
 .imgcard{
