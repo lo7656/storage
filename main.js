@@ -7,11 +7,14 @@ $(document).ready(function () {
 });
 
 let data
+let test
+
 if (localStorage.key == null)
     localStorage.setItem('key', 0)
 
 function deleteCard(card) {
     let idCard = card.id
+    test = idCard
     console.log(idCard)
     localStorage.removeItem(`image${idCard}`)
     localStorage.removeItem(`name${idCard}`)
