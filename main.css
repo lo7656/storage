@@ -12,6 +12,17 @@
   align-items: center;
 }
 
+.deleteBtn{
+  color: #fff;
+  translate: 0.3s;
+  text-decoration: none;
+}
+
+.deleteBtn :hover{
+  translate: 0.3s;
+  text-decoration: underline;
+}
+
 .content{
   background-color: #fff;
 }
