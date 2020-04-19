@@ -285,10 +285,14 @@ opacity: 0;
   color: #fff;
   text-decoration: none;
   width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sendBtn:hover{
   translate: 0.3s;
-  background-color: none;
+  background-color: #fff;
   color: #F95C18;
+
 }
