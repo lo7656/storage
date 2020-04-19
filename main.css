@@ -5,6 +5,18 @@
   filter: blur(4px);
 }
 
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgcard{
+  height: 40px;
+  width: auto;
+}
+
 a.btn {
   width: 200px;
   padding: 18px 0;
