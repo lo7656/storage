@@ -25,7 +25,7 @@ function listAdd(){
         const elementImg = localStorage.getItem(`name${i}`)
         const elementName = localStorage.getItem(`image${i}`)
         let card =`<div id="${i+1}card"><p id="nameCard">${elementName}</p> <img id="imgCard" src="${elementImg}"/></div>`
-        document.querySelector('.localpagelist2').innerHTML += card;
+        document.querySelector('.content').innerHTML += card;
     }
 }
 
