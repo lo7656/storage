@@ -34,6 +34,7 @@
 
 .content{
   background-color: #fff;
+  min-height: 60%;
 }
 
 .imgcard{
@@ -264,6 +265,9 @@ opacity: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 60%;
+  bottom: 10px;
 }
 
 
