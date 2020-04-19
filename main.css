@@ -107,6 +107,7 @@ a.btn {
 }
 
 .good-job {
+  margin-top: -45px;
   text-align: center;
   font-family: 'Montserrat', Arial,       Helvetica, sans-serif;
   color: #F95C18;
