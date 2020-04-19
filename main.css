@@ -286,11 +286,12 @@ opacity: 0;
   background-color: #F95C18;
   color: #fff;
   text-decoration: none;
-  width: 45%;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  text-align: center;
 }
 
 .client .sendBtn:hover{
