@@ -260,14 +260,13 @@ opacity: 0;
 
 .client{
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .clientData{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 40%;
