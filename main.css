@@ -90,7 +90,7 @@ a.btn {
   height: 32px;
   padding: 12px 30px;
   overflow: hidden;
-  background: rgb(98%, 36%, 9%, 0.3);;
+  background: rgba(31, 250, 23, 0.3);;
 }
 
 .btn-close {
