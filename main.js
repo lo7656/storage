@@ -22,9 +22,9 @@ function listAdd(){
     let count = localStorage.getItem('key')
     
     for (let i = 1; i < count; i++) {
-        const elementImg = localStorage.getItem(`name${i}`)
-        const elementName = localStorage.getItem(`image${i}`)
-        let card =`<div id="${i+1}card"><p id="nameCard">${elementName}</p> </div>`
+        const elementImg = localStorage.getItem(`image${i}`)
+        const elementName = localStorage.getItem(`name${i}`)
+        let card =`<div id="${i+1}card"><p id="nameCard">${elementName}</p> <img id="imgCard" src="${elementImg}"/></div>`
         document.querySelector('.cards').innerHTML += card;
     }
 }
