@@ -20,6 +20,7 @@ function add(card) {
 
 function listAdd(){
     let count = localStorage.getItem('key')
+    document.querySelector('.cards').innerHTML = '';
     
     for (let i = 1; i < count; i++) {
         const elementImg = localStorage.getItem(`image${i}`)
