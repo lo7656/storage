@@ -12,5 +12,7 @@ $name = trim($name);
 $phone = trim($phone);
 $email = trim($email);
 
-mail("vladleonchik@mail.ru", "Заказ с сайта", "Имя:".$name.". E-mail: ".$email ,"From: Владислав \r\n")
+mail("vladleonchik@mail.ru", "Заказ с сайта", "Имя:".$name.". E-mail: ".$email ,"From: Владислав \r\n");
+
+echo "<script>console.log('"!!!!!!!!!!!!!!!!!!!!!!работает"')</script>";
 ?>
