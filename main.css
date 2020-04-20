@@ -292,16 +292,6 @@ opacity: 0;
   transition: 0.5s;
 }
 
-.dataInp:hover{
-  border: 1px solid #F95C18;
-  transition: 0.5s;
-}
-
-.dataInp:active{
-  border: 1px solid #F95C18;
-  transition: 0.5s;
-}
-
 .client .sendBtn{
   cursor: pointer;
   border: #F95C18 1px solid;
