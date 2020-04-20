@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "https://rawcdn.githack.com/lo7656/storage/135ed483dcb3b66bd53c87fe8ecc0273bd5d09a5/postMail.php", //Change
+			url: "postmail.js", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
