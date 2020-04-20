@@ -1,3 +1,25 @@
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$(".client").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "https://rawcdn.githack.com/lo7656/storage/135ed483dcb3b66bd53c87fe8ecc0273bd5d09a5/postMail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+//отправка формы
+
 $(document).ready(function () {
     $('.trigger').on('click', function () {
         $('.modal-wrapper').toggleClass('open');
@@ -171,3 +193,5 @@ fetch('https://raw.githubusercontent.com/lo7656/storage/master/data.json', { met
     .then(response => response.json())
     .then(body => maker(body))
     .catch(error => console.log(error))
+
+    
