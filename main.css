@@ -304,6 +304,7 @@ opacity: 0;
   align-items: center;
   transition: 0.5s;
   text-align: center;
+  white-space: pre-wrap	;
 }
 
 .client .sendBtn:hover{
