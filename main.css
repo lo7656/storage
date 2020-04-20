@@ -289,6 +289,17 @@ opacity: 0;
   margin-bottom: 3px;
   outline: 0;
   outline-offset: 0;
+  transition: 0.5s;
+}
+
+.dataInp:hover{
+  border: 1px solid #F95C18;
+  transition: 0.5s;
+}
+
+.dataInp:active{
+  border: 1px solid #F95C18;
+  transition: 0.5s;
 }
 
 .client .sendBtn{
