@@ -16,12 +16,21 @@ $(document).ready(function () {
     });
 
     $('.sendBtn').on('click', function () {
+        
+        let products = ''
+        for (let i = 1; i < count; i++) {
+            const elementImg = localStorage.getItem(`image${i}`)
+            const elementName = localStorage.getItem(`name${i}`)
+            products += `<div class="card" id="${i + 1}card"><div class="info"><p class="nameCard">${elementName}</p> <img class="imgCard" src="${elementImg}"/></div> <a onClick="deleteCard(event.currentTarget)" id="${i}" class="deleteBtn">Удалить</a></div>`
+            document.querySelector('.cards').innerHTML += card;
+        }
+
         Email.send({
             SecureToken : "0c5be240-0909-400e-90ea-cf9754b22f65",
             To : 'vladleonchik@mail.ru',
             From : "dush3z@yandex.com",
             Subject : "This is the subject",
-            Body : document.querySelectorAll('card')
+            Body : products
         }).then(
           message => alert(message)
         );
