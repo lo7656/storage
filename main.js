@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "postmail.php", //Change
+			url: "https://rawcdn.githack.com/lo7656/storage/4f54e96913235703267755911f58fce0579ac203/postMail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
@@ -88,8 +88,6 @@ function maker(json) {
         case "/fruit":
             json = json.Фрукты
             break;
-
-
         case "/vegetables":
             json = json.Овощи
             break;
