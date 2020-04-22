@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     //E-mail Ajax Send
     $(".client").submit(function () { 
+        console.log("Должно отправить!")
         Email.send({
             SecureToken : "9d0729d9-2c2a-424b-a92e-bca9316eef90",
             To : 'vladleonchik@mail.ru',
