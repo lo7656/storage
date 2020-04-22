@@ -1,20 +1,31 @@
 $(document).ready(function () {
 
     //E-mail Ajax Send
-    $(".client").submit(function () { //Change
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "postMail.php", //Change
-            data: th.serialize()
-        }).done(function () {
-            alert("Thank you!");
-            setTimeout(function () {
-                // Done Functions
-                th.trigger("reset");
-            }, 1000);
-        });
-        return false;
+    $(".client").submit(function () { 
+        Email.send({
+            Host : "viliton.by",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+        // var th = $(this);
+        // $.ajax({
+        //     type: "POST",
+        //     url: "postMail.php", //Change
+        //     data: th.serialize()
+        // }).done(function () {
+        //     alert("Thank you!");
+        //     setTimeout(function () {
+        //         // Done Functions
+        //         th.trigger("reset");
+        //     }, 1000);
+        // });
+        // return false;
     });
 
 });
