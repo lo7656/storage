@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //E-mail Ajax Send
-    function send(){
+    function sendmail(){
         Email.send({
             SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
             To : 'vladleonchik@mail.ru',
