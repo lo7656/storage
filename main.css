@@ -7,6 +7,11 @@
   transition: all 0.5s;
 }
 
+.localpagelist2__block-pic:hover{
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .localpagelist2__block-pic:hover:after {
   font-weight: bold;
   color: white;
