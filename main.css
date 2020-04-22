@@ -3,7 +3,8 @@
 
 .localpagelist2__block-pic{
   position: relative;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .localpagelist2__block-pic:hover:after {
@@ -18,7 +19,8 @@
   content: "Добавить в корзину";
   background: gray;
   opacity: 0.8;
-  transition: 0.5s;
+  -webkit-transition: all 3s;
+  transition: all 0.5s;
   white-space: pre-wrap;
 }
 
