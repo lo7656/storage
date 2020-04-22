@@ -22,7 +22,6 @@ $(document).ready(function () {
             const elementImg = localStorage.getItem(`image${i}`)
             const elementName = localStorage.getItem(`name${i}`)
             products += `<div class="card" id="${i + 1}card"><div class="info"><p class="nameCard">${elementName}</p> <img class="imgCard" src="${elementImg}"/></div> <a onClick="deleteCard(event.currentTarget)" id="${i}" class="deleteBtn">Удалить</a></div>`
-            document.querySelector('.cards').innerHTML += card;
         }
 
         Email.send({
