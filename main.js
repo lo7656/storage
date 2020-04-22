@@ -7,7 +7,7 @@ $(document).ready(function () {
             Username : "username",
             Password : "password",
             To : 'dush3z@yandex.ru',
-            From : "you@isp.com",
+            From : "vladleonchik@mail.ru",
             Subject : "This is the subject",
             Body : "And this is the body"
         }).then(
