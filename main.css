@@ -1,8 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-
 .localpagelist2__block-pic{
-  /* position: relative; */
+  position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
