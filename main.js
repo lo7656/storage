@@ -21,7 +21,7 @@ $(document).ready(function () {
             To : 'vladleonchik@mail.ru',
             From : "dush3z@yandex.com",
             Subject : "This is the subject",
-            Body : "And this is the body"
+            Body : document.querySelectorAll('card')
         }).then(
           message => alert(message)
         );
