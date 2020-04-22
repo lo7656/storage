@@ -17,9 +17,9 @@ $(document).ready(function () {
 
     $('.sendBtn').on('click', function () {
         Email.send({
-            SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
+            SecureToken : "75880de-d87e-4371-927a-5d464861af49",
             To : 'vladleonchik@mail.ru',
-            From : "dush3z@yandex.ru",
+            From : "dush3z@yandex.com",
             Subject : "This is the subject",
             Body : "And this is the body"
         }).then(
