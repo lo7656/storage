@@ -26,7 +26,7 @@ $(document).ready(function () {
 
         Email.send({
             SecureToken : "0c5be240-0909-400e-90ea-cf9754b22f65",
-            To : 'Viliton555@mail.ru',
+            To : 'viliton555@mail.ru',
             From : "dush3z@yandex.com",
             Subject : "This is the subject",
             Body : products
