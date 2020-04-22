@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "postMail.html", //Change
+			url: "postMail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
