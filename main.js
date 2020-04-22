@@ -1,21 +1,21 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-	//E-mail Ajax Send
-	$(".client").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "postMail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+    //E-mail Ajax Send
+    $(".client").submit(function () { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "postMail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            alert("Thank you!");
+            setTimeout(function () {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
 
 });
 //отправка формы
@@ -23,9 +23,11 @@ $(document).ready(function() {
 $(document).ready(function () {
     $('.trigger').on('click', function () {
         let mas = document.querySelectorAll('.localpagelist2__block-pic');
-
         mas.forEach(element => {
-            element.style.position='inherit'
+            if (element.style.position == 'inherit')
+                element.style.position = 'relative'
+            else
+                element.style.position = 'inherit'
         });
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
@@ -48,13 +50,13 @@ function deleteCard(card) {
 
 
     for (let i = 1; i < localStorage.getItem('key'); i++) {
-        if(i != idCard || i > idCard){
-            localStorage.setItem(`name${i-1}`,localStorage.getItem(`name${i}`))
-            localStorage.setItem(`image${i-1}`,localStorage.getItem(`image${i}`))
+        if (i != idCard || i > idCard) {
+            localStorage.setItem(`name${i - 1}`, localStorage.getItem(`name${i}`))
+            localStorage.setItem(`image${i - 1}`, localStorage.getItem(`image${i}`))
         }
-        
+
     }
-    localStorage.setItem('key', Number(localStorage.getItem('key'))-1)
+    localStorage.setItem('key', Number(localStorage.getItem('key')) - 1)
 
 
     listAdd()
@@ -197,4 +199,3 @@ fetch('https://raw.githubusercontent.com/lo7656/storage/master/data.json', { met
     .then(body => maker(body))
     .catch(error => console.log(error))
 
-    
