@@ -3,11 +3,9 @@ $(document).ready(function () {
     //E-mail Ajax Send
     $(".client").submit(function () { 
         Email.send({
-            Host : "viliton.by",
-            Username : "username",
-            Password : "password",
-            To : 'dush3z@yandex.ru',
-            From : "vladleonchik@mail.ru",
+            SecureToken : "9d0729d9-2c2a-424b-a92e-bca9316eef90",
+            To : 'vladleonchik@mail.ru',
+            From : "viliton.by",
             Subject : "This is the subject",
             Body : "And this is the body"
         }).then(
