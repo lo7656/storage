@@ -1,36 +1,4 @@
-$(document).ready(function () {
 
-    //E-mail Ajax Send
-    function sendmail(){
-        Email.send({
-            SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
-            To : 'vladleonchik@mail.ru',
-            From : "viliton.by",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
-    }
-
-    // $(".client").submit(function () { 
-       
-        // var th = $(this);
-        // $.ajax({
-        //     type: "POST",
-        //     url: "postMail.php", //Change
-        //     data: th.serialize()
-        // }).done(function () {
-        //     alert("Thank you!");
-        //     setTimeout(function () {
-        //         // Done Functions
-        //         th.trigger("reset");
-        //     }, 1000);
-        // });
-        // return false;
-    // });
-
-});
 //отправка формы
 
 $(document).ready(function () {
@@ -46,6 +14,18 @@ $(document).ready(function () {
         $('.page-wrapper').toggleClass('blur-it');
         return false;
     });
+
+    $('.sendBtn').on('click', function () {
+        Email.send({
+            SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
+            To : 'vladleonchik@mail.ru',
+            From : "viliton.by",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    })
 });
 
 let data
