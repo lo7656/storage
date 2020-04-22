@@ -1,11 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
-.localpagelist2__block{
+.localpagelist2__block-pic{
   position: relative;
+  transition: 0.5s;
 }
 
-.localpagelist2__block:hover:after {
+.localpagelist2__block-pic:hover:after {
+  font-weight: bold;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +18,8 @@
   content: "Добавить в корзину";
   background: gray;
   opacity: 0.8;
+  transition: 0.5s;
+  white-space: pre-wrap;
 }
 
 
