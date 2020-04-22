@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
     //E-mail Ajax Send
-    $(".client").submit(function () { 
-        console.log("Должно отправить!")
+    function send(){
         Email.send({
             SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
             To : 'vladleonchik@mail.ru',
@@ -12,6 +11,10 @@ $(document).ready(function () {
         }).then(
           message => alert(message)
         );
+    }
+
+    // $(".client").submit(function () { 
+       
         // var th = $(this);
         // $.ajax({
         //     type: "POST",
@@ -25,7 +28,7 @@ $(document).ready(function () {
         //     }, 1000);
         // });
         // return false;
-    });
+    // });
 
 });
 //отправка формы
