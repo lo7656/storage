@@ -19,7 +19,7 @@ $(document).ready(function () {
         Email.send({
             SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
             To : 'vladleonchik@mail.ru',
-            From : "viliton.by",
+            From : "dush3z@yandex.ru",
             Subject : "This is the subject",
             Body : "And this is the body"
         }).then(
