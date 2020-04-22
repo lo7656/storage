@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "viliton.by/t/postmail.php", //Change
+			url: "postmail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
