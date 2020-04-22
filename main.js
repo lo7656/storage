@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "https://rawcdn.githack.com/lo7656/storage/4f54e96913235703267755911f58fce0579ac203/postMail.php", //Change
+			url: "viliton.by/t/postmail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
