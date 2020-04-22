@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".client").submit(function () { 
         console.log("Должно отправить!")
         Email.send({
-            SecureToken : "11e03a38-e0f3-4202-82ed-496fa03e976c",
+            SecureToken : "9da645b9-7f49-4a47-9b2b-e16d9d88c5b1",
             To : 'vladleonchik@mail.ru',
             From : "viliton.by",
             Subject : "This is the subject",
