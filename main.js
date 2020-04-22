@@ -22,7 +22,11 @@ $(document).ready(function() {
 
 $(document).ready(function () {
     $('.trigger').on('click', function () {
-        document.querySelector('.localpagelist2__block-pic').style.position='inherit';
+        let mas = document.querySelector('.localpagelist2__block-pic');
+
+        mas.forEach(element => {
+            element.style.position='inherit'
+        });
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         return false;
