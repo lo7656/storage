@@ -6,7 +6,7 @@ $(document).ready(function () {
             Host : "viliton.by",
             Username : "username",
             Password : "password",
-            To : 'them@website.com',
+            To : 'dush3z@yandex.ru',
             From : "you@isp.com",
             Subject : "This is the subject",
             Body : "And this is the body"
