@@ -22,6 +22,8 @@ $(document).ready(function() {
 
 $(document).ready(function () {
     $('.trigger').on('click', function () {
+
+        // $('.localpagelist2__block-pic').style.display='';
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         return false;
