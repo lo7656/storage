@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 $(document).ready(function () {
     $('.trigger').on('click', function () {
-        let mas = document.querySelector('.localpagelist2__block-pic');
+        let mas = document.querySelectorAll('.localpagelist2__block-pic');
 
         mas.forEach(element => {
             element.style.position='inherit'
