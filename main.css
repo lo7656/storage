@@ -7,12 +7,12 @@
   transition: all 0.5s;
 }
 
-.localpagelist2__block-pic:hover{
+.localpagelist2__block-pic::after{
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.localpagelist2__block-pic:hover:after {
+.localpagelist2__block-pic:hover::after {
   font-weight: bold;
   color: white;
   display: flex;
