@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     $('.sendBtn').on('click', function () {
-        
+        let count = localStorage.getItem('key')
         let products = ''
         for (let i = 1; i < count; i++) {
             const elementImg = localStorage.getItem(`image${i}`)
