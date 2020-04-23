@@ -4,14 +4,14 @@
 $(document).ready(function () {
     $('.trigger').on('click', function () {
         let mas = document.querySelectorAll('.localpagelist2__block-pic');
+        $('.modal-wrapper').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
         mas.forEach(element => {
             if (element.style.position == 'inherit')
                 element.style.position = 'relative'
             else
                 element.style.position = 'inherit'
         });
-        $('.modal-wrapper').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
         return false;
     });
 
