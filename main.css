@@ -379,4 +379,8 @@ opacity: 0;
     height: 60px;
     margin-top:10px;
   }
+
+  .info{
+    align-items: center;
+  }
 }
