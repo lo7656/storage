@@ -383,4 +383,22 @@ opacity: 0;
   .info{
     align-items: center;
   }
+
+  .localpagelist2__block-pic:hover::after {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0; top: 0; 
+    width: 100%; height: 100%;
+    position: absolute;
+    content: url(https://imagizer.imageshack.com/img924/7407/WogxA6.png);
+    background: gray;
+    opacity: 0.8;
+    -webkit-transition: all 3s;
+    transition: all 0.5s;
+    white-space: pre-wrap;
+  }
 }
