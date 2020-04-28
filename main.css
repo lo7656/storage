@@ -10,7 +10,7 @@
 }
 
 .localpagelist2__block-pic:hover::after {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: white;
   display: flex;
@@ -355,4 +355,27 @@ opacity: 0;
   transition: 0.5s;
   background-color: #fff;
   color: #F95C18;
+}
+
+@media screen and (max-width:600px){
+  .modal{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+  }
+
+  .client{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .clientData{
+    width: 80%;
+  }
+
+  .sendBtn{
+    width: 80%;
+    height: 60px;
+    margin-top:10px;
+  }
 }
