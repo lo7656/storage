@@ -14,10 +14,10 @@ $(document).ready(function () {
                 element.style.position = 'inherit'
         });
 
-        if (btn.style.display != "none")
-            btn.style.display = "none"
+        if (btn[0].style.display != "none")
+            btn[0].style.display = "none"
         else
-            btn.style.display = "block"
+            btn[0].style.display = "block"
 
         return false;
     });
