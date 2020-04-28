@@ -3,7 +3,8 @@
 
 $(document).ready(function () {
     $('.trigger').on('click', function () {
-        let mas = document.querySelectorAll('.localpagelist2__block-pic');
+        let mas = document.querySelectorAll('.localpagelist2__block-pic')
+        let btn = document.querySelectorAll('.email-bt')
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         mas.forEach(element => {
@@ -11,6 +12,11 @@ $(document).ready(function () {
                 element.style.position = 'relative'
             else
                 element.style.position = 'inherit'
+
+            if (btn.style.display != "none")
+                btn.style.display = "none"
+            else
+                btn.style.display = "block"
         });
         return false;
     });
@@ -25,15 +31,15 @@ $(document).ready(function () {
         }
 
         Email.send({
-            SecureToken : "0c5be240-0909-400e-90ea-cf9754b22f65",
-            To : 'viliton555@mail.ru',
-            From : "dush3z@yandex.com",
-            Subject : "ЗАказ с сайта!",
-            Body : products
+            SecureToken: "0c5be240-0909-400e-90ea-cf9754b22f65",
+            To: 'viliton555@mail.ru',
+            From: "dush3z@yandex.com",
+            Subject: "ЗАказ с сайта!",
+            Body: products
         }).then(
-          message => alert(message),
-          localStorage.clear(),
-          listAdd()
+            message => alert(message),
+            localStorage.clear(),
+            listAdd()
         );
     })
 });
