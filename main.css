@@ -27,7 +27,7 @@
   white-space: pre-wrap;
 }
 
-.localpagelist2__block-pic:hover::after {
+.localpagelist2__block-pic:active::after {
   font-size: 28px;
   font-weight: bold;
   color: white;
