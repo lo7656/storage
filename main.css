@@ -367,6 +367,7 @@ opacity: 0;
   .client{
     flex-direction: column;
     width: 100%;
+    align-items: baseline;
   }
 
   .clientData{
