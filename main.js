@@ -12,12 +12,13 @@ $(document).ready(function () {
                 element.style.position = 'relative'
             else
                 element.style.position = 'inherit'
-
-            if (btn.style.display != "none")
-                btn.style.display = "none"
-            else
-                btn.style.display = "block"
         });
+
+        if (btn.style.display != "none")
+            btn.style.display = "none"
+        else
+            btn.style.display = "block"
+
         return false;
     });
 
