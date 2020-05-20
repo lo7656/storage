@@ -31,11 +31,15 @@ $(document).ready(function () {
             products += `<div class="card" id="${i + 1}card"><div class="info"><p class="nameCard">${elementName}</p> <img class="imgCard" src="${elementImg}"/></div></div>`
         }
 
+        let masInf = document.querySelectorAll('.dataInp')
+
+        let str = `Заказчик: ${masInf[0].value}, Телефон: ${masInf[1].value}`
+
         Email.send({
             SecureToken: "0c5be240-0909-400e-90ea-cf9754b22f65",
             To: 'viliton555@mail.ru',
             From: "dush3z@yandex.com",
-            Subject: "ЗАказ с сайта!",
+            Subject: "Заказ с сайта!",
             Body: products
         }).then(
             message => alert(message),
