@@ -86,7 +86,7 @@ function listAdd() {
     let count = localStorage.getItem('key')
     document.querySelector('.cards').innerHTML = ''
 
-    for (let i = 0; i < count; i++) {
+    for (let i = 1; i < count; i++) {
         const elementImg = localStorage.getItem(`image${i}`)
         const elementName = localStorage.getItem(`name${i}`)
         let card = `<div class="card" id="${i + 1}card"><div class="info"><p class="nameCard">${elementName}</p> <img class="imgCard" src="${elementImg}"/></div> <a onClick="deleteCard(event.currentTarget)" id="${i}" class="deleteBtn">Удалить</a></div>`
