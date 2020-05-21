@@ -97,7 +97,7 @@ function listAdd() {
 function counter(value) {
     localStorage.setItem('name' + localStorage.getItem('key'), value.name)
     localStorage.setItem('image' + localStorage.getItem('key'), value.image)
-    localStorage.setItem('key', Number(localStorage.getItem('key')) + 1)
+    localStorage.setItem('key', Number(localStorage.getItem('key')))
 }
 
 function getItems(id) {
