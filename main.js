@@ -33,14 +33,14 @@ $(document).ready(function () {
 
         let masInf = document.querySelectorAll('.dataInp')
 
-        let str = `Заказчик: ${masInf[0].value}, Телефон: ${masInf[1].value}`
+        let str = `Заказчик: ${masInf[0].value}, Телефон: ${masInf[1].value}, ${products}`
 
         Email.send({
             SecureToken: "0c5be240-0909-400e-90ea-cf9754b22f65",
-            To: 'viliton555@mail.ru',
+            To: 'vladleonchik@mail.ru',
             From: "dush3z@yandex.com",
             Subject: "Заказ с сайта!",
-            Body: products
+            Body: str
         }).then(
             message => alert(message),
             localStorage.clear(),
